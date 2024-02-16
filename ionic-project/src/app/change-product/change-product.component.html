@@ -1,0 +1,22 @@
+<div class="row change" *ngIf="change">
+    <div class="col-12">
+        les changements ont bien été enregistrées
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label>Titre</label><br>
+            <input type="text" class="form-control" [(ngModel)]="produit.title"></div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="form-group">
+            <label>Prix</label><br>
+            <input type="text" class="form-control" [(ngModel)]="produit.price"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="submit"><button class="btn btn-outline-success" (click)="modif()">Envoyer</button></div>
+    </div>
+</div>
